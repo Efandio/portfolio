@@ -22,8 +22,8 @@ function App() {
         return <Portfolio />;
       case 'contact':
         return <Contact />
-    }
-  }
+    };
+  };
 
 
 
@@ -72,13 +72,13 @@ function App() {
 
         <div className="row-span-2 lg:row-span-3">
           {isMobile && <Navbar handleClick={(section) => setSectionComponents(section)} className="fixed" />}
-          <div className="overflow-y-auto container max-h-[440px] h-[440px] w-full mt-14 p-4 border">
+          <div className="overflow-y-auto container max-h-[440px] h-[440px] w-full mt-14 lg:-translate-x-10 p-4 border rounded-xl">
             {renderSection()}
           </div>
         </div>
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;

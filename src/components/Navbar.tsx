@@ -6,7 +6,7 @@ interface NavbarProps {
     className?: string;
     link?: string;
     handleClick?: (tp: clickType) => void;
-}
+};
 
 const Navbar: React.FC<NavbarProps> = ({ className, link, handleClick }) => {
 
@@ -19,7 +19,7 @@ const Navbar: React.FC<NavbarProps> = ({ className, link, handleClick }) => {
                 <Button onClick={() => handleClick && handleClick('contact')} className="hover:bg-gray-700 text-xs"><a className="text-xs" href={link}>Contact</a></Button>
             </div>
         </nav>
-    )
+    );
 };
 
 export default Navbar;

@@ -1,6 +1,5 @@
 
 
-
 const Contact = () => {
   return (
     <div>
